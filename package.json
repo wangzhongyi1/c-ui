@@ -1,0 +1,40 @@
+{
+  "name": "c-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "module": "es/index.mjs",
+  "scripts": {
+    "build:css": "gulp",
+    "build:esm": "webpack --config=webpack.config:esm.js",
+    "build:umd": "webpack --config=webpack.config:umd.js",
+    "build": "npm run build:esm && npm run build:umd && npm run build:css"
+  },
+  "files": [
+    "es",
+    "lib",
+    "style",
+    "src",
+    "exmaple"
+  ],
+  "keywords": [
+    "vue",
+    "library",
+    "vue library",
+    "ui",
+    "ui library",
+    "vue ui library"
+  ],
+  "author": "wangzy",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-less": "^5.0.0",
+    "vue": "^3.3.4",
+    "vue-loader": "^17.2.2",
+    "vue-template-compiler": "^2.7.14",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4"
+  }
+}
